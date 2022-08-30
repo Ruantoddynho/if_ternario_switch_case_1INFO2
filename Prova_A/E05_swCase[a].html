@@ -10,11 +10,22 @@
     //Calcule e apresente o preço final da venda de acordo com o Tipo do Cliente
 
     //ENTRADA
-
-
+const venda = parseInt(prompt("Informe um valor de venda"))
+const Cliente = prompt("Informe um tipo de cliente C || V || F")
+let mensagem
     //PROCESSAMENTO
-
-
+switch (cliente) {
+    case "C":
+        mensagem = `O cliente pagará ${vendas} / 0.1`
+        break;
+case "V":
+    mensagem = `O cliente pagará ${vendas} / 0,5`
+    break;
+    case "F":
+        mensagem = `O cliente pagará ${vendas} / 1.0`
+    default:
+        break;
+}
     //SAÍDA
-
+document.write(mensagem)
 </script>

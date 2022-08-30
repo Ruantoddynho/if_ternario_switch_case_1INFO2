@@ -13,10 +13,26 @@
 
     //ENTRADA
 
+const fruta = prompt("Informe um tipo de fruta L || K || M")
+let mensagem
 
     //PROCESSAMENTO
 
-
+switch (fruta) {
+    case "L":
+        mensagem = "A laranja está em falta."
+        break;
+case "K":
+    mensagem = "O kiwi está acabando."
+    break;
+    case "M":
+        mensagem = "O quilo da melancia é R$ 3.00"
+        break;
+        default:
+        mensagem = "A opção de fruta é invalida"
+}
     //SAÍDA
+
+document.write(mensagem)
 
 </script>

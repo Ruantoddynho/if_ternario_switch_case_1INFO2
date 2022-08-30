@@ -13,11 +13,25 @@
     //DICA: Use G para gasolina, A para álcool, N para GNV, D para diesel
 
     //ENTRADA
-
-
+const tipocombustivel = prompt("Informe um tipo de gasolina G || A || GN || D")
+let mensagem
     //PROCESSAMENTO
-
-
+switch (tipocombustivel) {
+    case "G":
+        mensagem = "O litro da gasolina cusa R$5,00"
+        break;
+case "A":
+mensagem = "O álcool esta em falta"
+break;
+case "GN":
+    mensagem = "GNV esta caro demais"
+    break;
+    case "D":
+        mensagem = "O litro de diesel custa R$ 8,00"
+      break;
+      default:
+        mensagem = "Opçao de combustivel invalida"
+}
     //SAÍDA
 
 </script>

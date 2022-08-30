@@ -9,10 +9,14 @@
     //Apresente a situação final do aluno
 
     //ENTRADA
-
-
+const notas1 = parseInt(prompt("Informe a nota do primeiro trimestre 1-10"));
+const notas2 = parseInt(prompt("Informe a nota do segundo trimestre 1-10"));
+const notas3 = parseInt(prompt("Informe a nota do terceiro trimestre 1-10"));
+let media = (notas1 + notas2 + notas3) / 3;
     //PROCESSAMENTO
-
+(media <= 4) ? document.write("O aluno está REPROVADO")
+: (media <= 6) ? document.write("O aluno esta em EXAME")
+: document.write("O aluno está APROVADO")
 
     //SAÍDA
 
